@@ -5,7 +5,7 @@ const Navbar = () => {
     const [dropdown, setDropdown] = useState(false);
 
     return (
-        <nav className="bg-gray-900 text-white py-4">
+        <nav className="bg-transparent text-white py-4">
             <div className="container mx-auto flex items-center justify-center">
                 <ul className="flex space-x-6 items-center text-lg font-semibold">
                     <li>
@@ -20,7 +20,7 @@ const Navbar = () => {
 
                     {/* Logo in Center */}
                     <li>
-                        <img src="/psretro/psretrologo-full.webp" alt="PS Retro Full Logo" className="h-10 w-10 mx-4"></img>
+                        <Link to="/"><img src="/psretro/psretrologo-full.webp" alt="PS Retro Full Logo" className="h-10 w-10 mx-4"></img></Link>
                     </li>
 
                     <li>
