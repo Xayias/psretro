@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.jsx";
 import './App.css'
 
 const App = () => {
   return (
     <Router>
+      <h1 className="text-4xl text-red-500">App is Loading</h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ps1" element={<h1>PS1 Page</h1>} />
