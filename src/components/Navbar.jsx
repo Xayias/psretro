@@ -20,7 +20,7 @@ const Navbar = () => {
 
                     {/* Logo in Center */}
                     <li>
-                        <img src="../../public/psretrologo-full.webp" alt="PS Retro Full Logo" className="h-10 w-10 mx-4"></img>
+                        <img src="/psretro/psretrologo-full.webp" alt="PS Retro Full Logo" className="h-10 w-10 mx-4"></img>
                     </li>
 
                     <li>
