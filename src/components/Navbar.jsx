@@ -9,42 +9,34 @@ const Navbar = () => {
             <div className="container mx-auto flex items-center justify-center">
                 <ul className="flex space-x-6 items-center text-lg font-semibold">
                     <li>
-                        <Link to="/ps1" className="hover:text-gray-400">PS1</Link>
+                        <Link to="/ps1" className="hover:text-gray-400 text-xl">PS1</Link>
                     </li>
                     <li>
-                        <Link to="/ps2" className="hover:text-gray-400">PS2</Link>
+                        <Link to="/ps2" className="hover:text-gray-400 text-xl">PS2</Link>
                     </li>
                     <li>
-                        <Link to="/ps3" className="hover:text-gray-400">PS3</Link>
+                        <Link to="/ps3" className="hover:text-gray-400 text-xl">PS3</Link>
+                    </li>
+                    <li>
+                        <Link to="/psp" className="hover:text-gray-400 text-xl">PSP</Link>
                     </li>
 
                     {/* Logo in Center */}
                     <li>
-                        <Link to="/"><img src="/psretro/psretrologo-full.webp" alt="PS Retro Full Logo" className="h-10 w-10 mx-4"></img></Link>
+                        <Link to="/"><img src="/psretro/psretrologo-full.webp" alt="PS Retro Full Logo" className="h-auto w-10 mx-4"></img></Link>
                     </li>
 
                     <li>
-                        <Link to="/ps4" className="hover:text-gray-400">PS4</Link>
+                        <Link to="/ps-vita" className="hover:text-gray-400 text-xl">PS Vita</Link>
                     </li>
                     <li>
-                        <Link to="/ps5" className="hover:text-gray-400">PS5</Link>
+                        <Link to="/ps4" className="hover:text-gray-400 text-xl">PS4</Link>
                     </li>
-
-                    {/* Dropdown for Handhelds */}
-                    <li className="relative">
-                        <button onClick={() => setDropdown(!dropdown)} className="hover:text-gray-400">
-                            Handhelds ▼
-                        </button>
-                        {dropdown && (
-                            <ul>
-                                <li>
-                                    <Link to="/psp" className="block px-4 py-2 hover:bg-gray-700">PSP</Link>
-                                </li>
-                                <li>
-                                    <Link to="/ps-vita" className="block px-4 py-2 hover:bg-gray-700">PS Vita</Link>
-                                </li>
-                            </ul>
-                        )}
+                    <li>
+                        <Link to="/ps-vr" className="hover:text-gray-400 text-xl">PS VR</Link>
+                    </li>
+                    <li>
+                        <Link to="/ps5" className="hover:text-gray-400 text-xl">PS5</Link>
                     </li>
                 </ul>
             </div>

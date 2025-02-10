@@ -16,6 +16,7 @@ const App = () => {
         <Route path="/ps5" element={<h1>PS5 Page</h1>} />
         <Route path="/psp" element={<h1>PSP Page</h1>} />
         <Route path="/ps-vita" element={<h1>PS Vita Page</h1>} />
+        <Route path="/ps-vr" element={<h1>PS VR Page</h1>} />
       </Routes>
     </Router>
   )
