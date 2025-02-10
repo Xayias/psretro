@@ -24,7 +24,7 @@ const Hero = () => {
       <div className="relative w-full h-screen overflow-hidden">
         {/* Background Video */}
         <video autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover">
-          <source src="../assets/67116-521253275.mp4" type="video/mp4" />
+          <source src="/psretro/67116-521253275.mp4" type="video/mp4" />
         </video>
         
         {/* Content Overlay */}
