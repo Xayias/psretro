@@ -21,41 +21,50 @@ const newsArticles = [
 
 const Hero = () => {
     return (
-        <div className="flex flex-col md:flex-row items-center justify-between p-6 bg-gray-900 text-white">
-            {/* Review Carousel */}
-            <div className="w-full md:w-2/3 lg:w-3/4 p-4">
-                <h2 className="text-xl md:text-2xl font-bold mb-4">Latest Reviews</h2>
-                <Swiper
-                    modules={[Navigation, Pagination, Autoplay]}
-                    spaceBetween={20}
-                    slidesPerView={1}
-                    pagination={{ clickable: true }}
-                    autoplay={{ delay: 5000 }}
-                    className="rounded-lg overflow-hidden"
-                >
-                    {reviews.map((review, index) => (
-                        <SwiperSlide key={index}>
-                            <a href={review.link} className="block bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition">
-                                <h3 className="text-lg font-semibold">{review.title}</h3>
-                            </a>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
-
-            {/* News Section */}
-            <div className="w-full md:w-1/3 lg:w-1/4 p-4">
-                <h2 className="text-xl md:text-2xl font-bold mb-4">Latest News</h2>
-                <ul>
-                    {newsArticles.map((article, index) => (
-                        <li key={index} className="mb-2">
-                            <a href={article.link} className="text-blue-400 hover:underline">{article.title}</a>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+      <div className="relative w-full h-screen overflow-hidden">
+        {/* Background Video */}
+        <video autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover">
+          <source src="../assets/67116-521253275.mp4" type="video/mp4" />
+        </video>
+        
+        {/* Content Overlay */}
+        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between p-6 bg-gray-900 bg-opacity-50 text-white h-full">
+          {/* Review Carousel */}
+          <div className="w-full md:w-2/3 lg:w-3/4 p-4">
+            <h2 className="text-xl md:text-2xl font-bold mb-4">Latest Reviews</h2>
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              spaceBetween={20}
+              slidesPerView={1}
+              navigation
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 5000 }}
+              className="rounded-lg overflow-hidden"
+            >
+              {reviews.map((review, index) => (
+                <SwiperSlide key={index}>
+                  <a href={review.link} className="block bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition">
+                    <h3 className="text-lg font-semibold">{review.title}</h3>
+                  </a>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          
+          {/* News Section */}
+          <div className="w-full md:w-1/3 lg:w-1/4 p-4">
+            <h2 className="text-xl md:text-2xl font-bold mb-4">Latest News</h2>
+            <ul>
+              {newsArticles.map((article, index) => (
+                <li key={index} className="mb-2">
+                  <a href={article.link} className="text-blue-400 hover:underline">{article.title}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
+      </div>
     );
-};
+  };
 
 export default Hero;
