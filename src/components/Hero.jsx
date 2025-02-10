@@ -21,7 +21,7 @@ const newsArticles = [
 
 const Hero = () => {
     return (
-      <div className="relative w-full h-1/3 overflow-hidden">
+      <div className="relative w-full h-1/3 overflow-hidden flex justify-center">
         {/* Background Video */}
         <video autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover">
           <source src="/psretro/67116-521253275.mp4" type="video/mp4" />
