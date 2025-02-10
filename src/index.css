@@ -15,10 +15,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: 'PSFont';
+  src: url('./fonts/zrnic rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #fff;
   text-decoration: inherit;
+  font-family: 'PSFont', sans-serif;
 }
 a:hover {
   color: #535bf2;
@@ -35,6 +43,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-family: 'PSFont', sans-serif;
 }
 
 button {

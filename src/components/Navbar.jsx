@@ -5,7 +5,7 @@ const Navbar = () => {
     const [dropdown, setDropdown] = useState(false);
 
     return (
-        <nav className="bg-transparent text-white py-4">
+        <nav className="bg-black text-white py-4">
             <div className="container mx-auto flex items-center justify-center">
                 <ul className="flex space-x-6 items-center text-lg font-semibold">
                     <li>
