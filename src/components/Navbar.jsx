@@ -7,12 +7,19 @@ const Navbar = () => {
 
     return (
         <nav className="bg-black text-white py-4 fixed w-full z-50">
-            <div className="container mx-auto flex justify-between items-center px-4">
+            <div className="container mx-auto flex justify-center items-center px-4">
 
                 {/* Hamburger Menu Button (Only on Mobile) */}
                 <button className="md:hidden text-white text-3xl z-50" onClick={() => setMenuOpen(!menuOpen)}>
                     <FaBars />
                 </button>
+
+                {/* Logo in Center (on Mobile) */}
+                <div className="flex md:hidden flex-grow justify-center">
+                      <Link to="/">
+                        <img src="/psretro/psretrologo-full.webp" alt="PS Retro Full Logo" className="h-auto w-28" />
+                      </Link>
+                    </div>
 
                 <ul className="hidden md:flex space-x-6 items-center text-lg font-semibold">
                     <li>
@@ -51,7 +58,6 @@ const Navbar = () => {
                 <div className={`fixed top-0 left-0 w-full h-screen bg-black flex flex-col items-center justify-center transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"} md:hidden`}>
                     {/* Mobile Menu Links */}
                     <ul className="flex flex-col items-center gap-8 text-3xl font-semibold">
-                        <li><Link to="/"><img src="/psretro/psretrologo-full.webp" alt="PS Retro Full Logo" className="h-auto w-28" /></Link></li>
                         <li><Link to="/ps1" className="hover:text-gray-400" onClick={() => setMenuOpen(false)}>PS1</Link></li>
                         <li><Link to="/ps2" className="hover:text-gray-400" onClick={() => setMenuOpen(false)}>PS2</Link></li>
                         <li><Link to="/ps3" className="hover:text-gray-400" onClick={() => setMenuOpen(false)}>PS3</Link></li>
