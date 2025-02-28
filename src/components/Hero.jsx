@@ -49,7 +49,7 @@ const Hero = () => {
               {reviews.map((review, index) => (
                 <SwiperSlide key={index}>
                   <a href={review.link} className="block p-6 rounded-lg hover:bg-gray-700 transition">
-                    <img src={review.image} alt={review.title} className="w-full h-64 object-cover rounded-lg" />
+                    <img src={review.image} alt={review.title} className="w-full h-96 object-cover rounded-lg" />
                     <h3 className="text-lg font-semibold mt-2">{review.title}</h3>
                   </a>
                 </SwiperSlide>
