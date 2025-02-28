@@ -37,7 +37,7 @@ const Navbar = () => {
                     {/* Logo in Center (on Desktop) */}
                     <div className="hidden md:flex flex-grow justify-center">
                       <Link to="/">
-                        <img src="/psretro/psretrologo-full.webp" alt="PS Retro Full Logo" className="h-auto w-28" />
+                        <img src="/psretro/psretrologo-full.webp" alt="PS Retro Full Logo" className="h-auto w-20 px-4" />
                       </Link>
                     </div>
                     <li>
