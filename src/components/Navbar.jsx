@@ -6,7 +6,7 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav className="bg-black text-white py-4 w-full z-50">
+        <nav className="bg-black text-white py-4 fixed md:relative w-full z-50">
             <div className="container mx-auto flex justify-center items-center px-4">
                 {/* Logo in Center (on Mobile) */}
                 <div className="flex md:hidden flex-grow justify-between">
