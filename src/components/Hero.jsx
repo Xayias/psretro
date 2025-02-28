@@ -42,14 +42,13 @@ const Hero = () => {
               modules={[Navigation, Pagination, Autoplay]}
               spaceBetween={20}
               slidesPerView={1}
-              navigation
               pagination={{ clickable: true }}
               autoplay={{ delay: 5000 }}
-              className="rounded-lg overflow-hidden bg-opacity-0"
+              className="rounded-lg overflow-hidden"
             >
               {reviews.map((review, index) => (
                 <SwiperSlide key={index}>
-                  <a href={review.link} className="block bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition">
+                  <a href={review.link} className="block p-6 rounded-lg hover:bg-gray-700 transition">
                     <img src={review.image} alt={review.title} className="w-full h-64 object-cover rounded-lg" />
                     <h3 className="text-lg font-semibold mt-2">{review.title}</h3>
                   </a>
