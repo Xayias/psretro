@@ -15,11 +15,15 @@ const Navbar = () => {
                 </button>
 
                 {/* Logo in Center (on Mobile) */}
-                <div className="flex md:hidden flex-grow justify-center">
-                      <Link to="/">
-                        <img src="/psretro/psretrologo-full.webp" alt="PS Retro Full Logo" className="h-auto w-10" />
-                      </Link>
-                    </div>
+                <div className="flex md:hidden flex-grow justify-between">
+                    <Link to="/">
+                        <img src="/psretro/psretrologo-full.webp" alt="PS Retro Full Logo" className="h-auto w-12" />
+                    </Link>
+                    {/* Hamburger Menu Button (Only on Mobile) */}
+                    <button className="md:hidden text-white text-3xl z-50" onClick={() => setMenuOpen(!menuOpen)}>
+                        <FaBars />
+                    </button>
+                </div>
 
                 <ul className="hidden md:flex space-x-6 items-center text-lg font-semibold">
                     <li>
