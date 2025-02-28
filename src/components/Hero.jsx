@@ -4,12 +4,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import ff7rImg from "../assets/ff7rebirth/05-ff7r-art-1117-1-1700231610266.webp";
+import mgs3Img from "../assets/mgs3remake/mgs3cover.webp";
 
 const reviews = [
-    { title: "Final Fantasy VII Rebirth Review", link: "reviews/ff7r" },
-    { title: "Metal Gear Solid 3: Snake Eater Review", link: "/reviews/msg3" },
-    { title: "Resident Evil 4 Remake Review", link: "reviews/re4" },
-    { title: "Silent Hill 2 Remake Review", link: "reviews/sh2" },
+    { title: "Final Fantasy VII Rebirth Review", link: "reviews/ff7r", image: ff7rImg },
+    { title: "Metal Gear Solid 3: Snake Eater Review", link: "/reviews/msg3", image: mgs3Img },
+    { title: "Resident Evil 4 Remake Review", link: "reviews/re4", image: "" },
+    { title: "Silent Hill 2 Remake Review", link: "reviews/sh2", image: "" },
 ];
 
 const newsArticles = [
@@ -44,7 +46,8 @@ const Hero = () => {
               {reviews.map((review, index) => (
                 <SwiperSlide key={index}>
                   <a href={review.link} className="block bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition">
-                    <h3 className="text-lg font-semibold">{review.title}</h3>
+                    <img src={review.image} alt={review.title} className="w-full h-64 object-cover rounded-lg" />
+                    <h3 className="text-lg font-semibold mt-2">{review.title}</h3>
                   </a>
                 </SwiperSlide>
               ))}
