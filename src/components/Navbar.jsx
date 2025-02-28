@@ -55,7 +55,7 @@ const Navbar = () => {
                 </ul>
 
                 {/* Mobile Fullscreen Menu */}
-                <div className={`fixed top-0 left-0 w-full h-screen bg-black bg-opacity-50 flex flex-col items-center justify-center transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"} md:hidden`}>
+                <div className={`fixed top-0 left-0 w-full h-screen bg-black flex flex-col items-center justify-center transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"} md:hidden`}>
                     {/* Mobile Menu Links */}
                     <ul className="flex flex-col items-center gap-8 text-3xl font-semibold">
                         <li><Link to="/ps1" className="hover:text-gray-400" onClick={() => setMenuOpen(false)}>PS1</Link></li>
