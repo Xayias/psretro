@@ -8,12 +8,6 @@ const Navbar = () => {
     return (
         <nav className="bg-black text-white py-4 w-full z-50">
             <div className="container mx-auto flex justify-center items-center px-4">
-
-                {/* Hamburger Menu Button (Only on Mobile) */}
-                <button className="md:hidden text-white text-3xl z-50" onClick={() => setMenuOpen(!menuOpen)}>
-                    <FaBars />
-                </button>
-
                 {/* Logo in Center (on Mobile) */}
                 <div className="flex md:hidden flex-grow justify-between">
                     <Link to="/">
