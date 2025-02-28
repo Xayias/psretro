@@ -34,7 +34,7 @@ const Hero = () => {
         </video>
         
         {/* Content Overlay */}
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-center p-6 bg-opacity-50 text-white h-1/3 w-1/2 md:w-9/12">
+        <div className="relative z-10 flex flex-col md:flex-row items-center justify-center p-6 bg-opacity-50 text-white h-1/3 w-full">
           {/* Review Carousel */}
           <div className="w-full md:w-2/3 lg:w-3/4 p-4">
             <h2 className="text-xl md:text-2xl font-bold mb-4">Latest Reviews</h2>
