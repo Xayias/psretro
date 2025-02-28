@@ -23,16 +23,16 @@ const Navbar = () => {
 
                 <ul className="hidden md:flex space-x-6 items-center text-lg font-semibold">
                     <li>
-                        <Link to="/ps1" className="hover:text-gray-400 text-4xl">PS1</Link>
+                        <Link to="/ps1" className="hover:text-gray-400 text-3xl">PS1</Link>
                     </li>
                     <li>
-                        <Link to="/ps2" className="hover:text-gray-400 text-4xl">PS2</Link>
+                        <Link to="/ps2" className="hover:text-gray-400 text-3xl">PS2</Link>
                     </li>
                     <li>
-                        <Link to="/ps3" className="hover:text-gray-400 text-4xl">PS3</Link>
+                        <Link to="/ps3" className="hover:text-gray-400 text-3xl">PS3</Link>
                     </li>
                     <li>
-                        <Link to="/psp" className="hover:text-gray-400 text-4xl">PSP</Link>
+                        <Link to="/psp" className="hover:text-gray-400 text-3xl">PSP</Link>
                     </li>
                     {/* Logo in Center (on Desktop) */}
                     <div className="hidden md:flex flex-grow justify-center">
@@ -41,16 +41,16 @@ const Navbar = () => {
                       </Link>
                     </div>
                     <li>
-                        <Link to="/ps-vita" className="hover:text-gray-400 text-4xl">PS Vita</Link>
+                        <Link to="/ps-vita" className="hover:text-gray-400 text-3xl">PS Vita</Link>
                     </li>
                     <li>
-                        <Link to="/ps4" className="hover:text-gray-400 text-4xl">PS4</Link>
+                        <Link to="/ps4" className="hover:text-gray-400 text-3xl">PS4</Link>
                     </li>
                     <li>
-                        <Link to="/ps-vr" className="hover:text-gray-400 text-4xl">PS VR</Link>
+                        <Link to="/ps-vr" className="hover:text-gray-400 text-3xl">PS VR</Link>
                     </li>
                     <li>
-                        <Link to="/ps5" className="hover:text-gray-400 text-4xl">PS5</Link>
+                        <Link to="/ps5" className="hover:text-gray-400 text-3xl">PS5</Link>
                     </li>
                 </ul>
 
