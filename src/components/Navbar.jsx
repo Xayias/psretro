@@ -6,7 +6,7 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav className="bg-black text-white py-4 fixed w-full z-50">
+        <nav className="bg-black text-white py-4 w-full z-50">
             <div className="container mx-auto flex justify-center items-center px-4">
 
                 {/* Hamburger Menu Button (Only on Mobile) */}
@@ -17,7 +17,7 @@ const Navbar = () => {
                 {/* Logo in Center (on Mobile) */}
                 <div className="flex md:hidden flex-grow justify-center">
                       <Link to="/">
-                        <img src="/psretro/psretrologo-full.webp" alt="PS Retro Full Logo" className="h-auto w-28" />
+                        <img src="/psretro/psretrologo-full.webp" alt="PS Retro Full Logo" className="h-auto w-10" />
                       </Link>
                     </div>
 
@@ -55,7 +55,7 @@ const Navbar = () => {
                 </ul>
 
                 {/* Mobile Fullscreen Menu */}
-                <div className={`fixed top-0 left-0 w-full h-screen bg-black flex flex-col items-center justify-center transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"} md:hidden`}>
+                <div className={`fixed top-0 left-0 w-full h-screen bg-black bg-opacity-50 flex flex-col items-center justify-center transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"} md:hidden`}>
                     {/* Mobile Menu Links */}
                     <ul className="flex flex-col items-center gap-8 text-3xl font-semibold">
                         <li><Link to="/ps1" className="hover:text-gray-400" onClick={() => setMenuOpen(false)}>PS1</Link></li>
