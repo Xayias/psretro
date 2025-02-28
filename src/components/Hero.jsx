@@ -29,9 +29,12 @@ const Hero = () => {
     return (
       <div className="relative w-full h-full overflow-hidden flex justify-center md:px-32 md:py-14">
         {/* Background Video */}
-        <video autoPlay loop muted playsinline className="absolute top-0 left-0 w-full h-full object-cover">
+        <video autoPlay loop muted playsinline className="hidden md:block absolute top-0 left-0 w-full h-full object-cover">
           <source src="/psretro/67116-521253275.webm" type="video/webm" />
         </video>
+
+        {/* Background GIF (Shown on Mobile) */}
+      <img src="/67116-521253275.gif" alt="Background Animation" className="block md:hidden absolute top-0 left-0 w-full h-full object-cover" />
         
         {/* Content Overlay */}
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-center p-6 bg-opacity-50 text-white h-1/3 w-full">
