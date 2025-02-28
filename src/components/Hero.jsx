@@ -6,12 +6,16 @@ import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import ff7rImg from "../assets/ff7rebirth/05-ff7r-art-1117-1-1700231610266.webp";
 import mgs3Img from "../assets/mgs3remake/mgs3cover.webp";
+import ghostImg from "../assets/ghostoftsushima/ghost-of-Tsushima-island-videogame-Japan-1.webp";
+import helldImg from "../assets/helldivers2/helld2_04.webp";
+import legohorizonImg from "../assets/legohorizonadventures/lego-horizon-adventures-blogroll-1717844705767.webp";
 
 const reviews = [
     { title: "Final Fantasy VII Rebirth Review", link: "reviews/ff7r", image: ff7rImg },
     { title: "Metal Gear Solid 3: Snake Eater Review", link: "/reviews/msg3", image: mgs3Img },
-    { title: "Resident Evil 4 Remake Review", link: "reviews/re4", image: "" },
-    { title: "Silent Hill 2 Remake Review", link: "reviews/sh2", image: "" },
+    { title: "Ghost of Tsushima Review", link: "reviews/got", image: ghostImg },
+    { title: "Helldivers 2 Review", link: "reviews/hd", image: helldImg },
+    { title: "Lego Horizon Adventures Review", link: "reviews/lha", image: legohorizonImg },
 ];
 
 const newsArticles = [
@@ -41,7 +45,7 @@ const Hero = () => {
               navigation
               pagination={{ clickable: true }}
               autoplay={{ delay: 5000 }}
-              className="rounded-lg overflow-hidden"
+              className="rounded-lg overflow-hidden bg-opacity-0"
             >
               {reviews.map((review, index) => (
                 <SwiperSlide key={index}>
