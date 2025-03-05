@@ -39,7 +39,7 @@ const Hero = () => {
         {/* Content Overlay */}
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-center p-6 bg-opacity-50 text-white h-1/3 w-full 2xl:w-9/12">
           {/* Review Carousel */}
-          <div className="w-full md:w-2/3 lg:w-2/3 p-4">
+          <div className="w-full md:w-1/2 lg:w-2/3 p-4">
             <h2 className="text-xl md:text-2xl font-bold mb-4">Latest Reviews</h2>
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
@@ -63,7 +63,7 @@ const Hero = () => {
           </div>
           
           {/* News Section */}
-          <div className="w-full md:w-1/3 lg:w-1/3 p-4">
+          <div className="w-full md:w-1/2 lg:w-1/3 p-4">
             <h2 className="text-xl md:text-2xl font-bold mb-4">Latest News</h2>
             <ul>
               {newsArticles.map((article, index) => (
