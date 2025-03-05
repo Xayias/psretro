@@ -37,7 +37,7 @@ const Hero = () => {
         <img src="/psretro/67116-521253275.gif" alt="Background Animation" className="block md:hidden absolute top-0 left-0 w-full h-full object-cover" />
         
         {/* Content Overlay */}
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-center p-6 bg-opacity-50 text-white h-1/3 w-full xl:w-9/12">
+        <div className="relative z-10 flex flex-col md:flex-row items-center justify-center p-6 bg-opacity-50 text-white h-1/3 w-full 2xl:w-9/12">
           {/* Review Carousel */}
           <div className="w-full md:w-2/3 lg:w-3/4 p-4">
             <h2 className="text-xl md:text-2xl font-bold mb-4">Latest Reviews</h2>
