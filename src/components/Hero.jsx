@@ -63,7 +63,7 @@ const Hero = () => {
           </div>
           
           {/* News Section */}
-          <div className="w-full md:w-1/3 px-4 h-full bg-gray-800 bg-opacity-50">
+          <div className="w-full md:w-1/3 py-10 h-full bg-black bg-opacity-50">
             <h2 className="text-xl md:text-2xl font-bold mb-4">Latest News</h2>
             <ul>
               {newsArticles.map((article, index) => (
