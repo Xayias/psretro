@@ -62,7 +62,7 @@ export default function PlayStationTimeline() {
                 <ul>
                     {consoles.map((console) => (
                         <li key={console.id}>
-                            <button className="text-blue-400 hover:text-blue-600 bg-opacity-0" onClick={() => setActiveConsole(console.id)}>{console.name}</button>
+                            <button className="text-blue-400 hover:text-blue-600 !bg-transparent" onClick={() => setActiveConsole(console.id)}>{console.name}</button>
                         </li>
                     ))}
                 </ul>
