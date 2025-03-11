@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import ff7PS1Img from "../assets/ps1/final-fantasy-7-ps1-wide-1.webp";
+
 const consoles = [
     {
         id: "ps1",
@@ -18,7 +20,7 @@ const consoles = [
                 id: "ps1-event2",
                 title: "Final Fantasy VII Released",
                 description: "One of the most iconic RPGs of all time debuts on the PS1.",
-                image: "../assets/ps1/final-fantasy-7-ps1-wide-1.webp",
+                image: ff7PS1Img,
             },
         ],
     },
