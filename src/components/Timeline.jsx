@@ -55,43 +55,44 @@ const consoles = [
 export default function PlayStationTimeline() {
     const [activeConsole, setActiveConsole] = useState(null);
 
-    <h2 className="text-lg font-bold">PlayStation History</h2>
-
     return(
-        <div className="relative flex p-16">
-            <div className="sticky top-20 w-64 mr-8 bg-gray-800 p-4 rounded-lg text-white self-start">
-                <h3 className="text-lg font-bold">Table of Contents</h3>
-                <ul>
-                    {consoles.map((console) => (
-                        <li key={console.id}>
-                            <button className="text-blue-400 hover:text-blue-600 !bg-transparent" onClick={() => setActiveConsole(console.id)}>{console.name}</button>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+        <div className="relative w-full">
+            <h2 className="text-lg font-bold">PlayStation History</h2>
+            <div className="relative flex p-16">
+                <div className="sticky top-20 w-64 mr-8 bg-gray-800 p-4 rounded-lg text-white self-start">
+                    <h3 className="text-lg font-bold">Table of Contents</h3>
+                    <ul>
+                        {consoles.map((console) => (
+                            <li key={console.id}>
+                                <button className="text-blue-400 hover:text-blue-600 !bg-transparent" onClick={() => setActiveConsole(console.id)}>{console.name}</button>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
 
-            <div className="flex-1 border-l-4 border-blue-500 pl-8">
-                {consoles.map((console) => (
-                    <motion.div key={console.id} className="realtive mb-10 cursor-pointer" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-                        <div className="p-4 bg-gray-900 text-white rounded-lg shadow-lg relative inline-block" onClick={() => setActiveConsole(activeConsole === console.id ? null: console.id)}>
-                            <img src={console.image} alt={console.name} className="w-60 mx-auto" />
-                            <h3 class="text-lg font-bold text-center mt-2">{console.name} ({console.year})</h3>
-                        </div>
-                        {activeConsole === console.id && (
-                            <AnimatePresence>
-                                <motion.div className="mt-4 border-l-4 border-blue-400 pl-6" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 50 }}>
-                                    {console.events.map((event) => (
-                                        <motion.div key={event.id} className="mt-4 bg-gray-800 p-4 text-white rounded-lg shadow-md" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 50}}>
-                                            <img src={event.image} alt={event.title} className="w-52 mx-auto mb-2" />
-                                            <h3 className="text-md font-semibold">{event.title}</h3>
-                                            <p className="text-sm">{event.description}</p>
-                                        </motion.div>
-                                    ))}
-                                </motion.div>
-                            </AnimatePresence>
-                        )}
-                    </motion.div>
-                ))}
+                <div className="flex-1 border-l-4 border-blue-500 pl-8">
+                    {consoles.map((console) => (
+                        <motion.div key={console.id} className="realtive mb-10 cursor-pointer" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+                            <div className="p-4 bg-gray-900 text-white rounded-lg shadow-lg relative inline-block" onClick={() => setActiveConsole(activeConsole === console.id ? null: console.id)}>
+                                <img src={console.image} alt={console.name} className="w-60 mx-auto" />
+                                <h3 class="text-lg font-bold text-center mt-2">{console.name} ({console.year})</h3>
+                            </div>
+                            {activeConsole === console.id && (
+                                <AnimatePresence>
+                                    <motion.div className="mt-4 border-l-4 border-blue-400 pl-6" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 50 }}>
+                                        {console.events.map((event) => (
+                                            <motion.div key={event.id} className="mt-4 bg-gray-800 p-4 text-white rounded-lg shadow-md" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 50}}>
+                                                <img src={event.image} alt={event.title} className="w-52 mx-auto mb-2" />
+                                                <h3 className="text-md font-semibold">{event.title}</h3>
+                                                <p className="text-sm">{event.description}</p>
+                                            </motion.div>
+                                        ))}
+                                    </motion.div>
+                                </AnimatePresence>
+                            )}
+                        </motion.div>
+                    ))}
+                </div>
             </div>
         </div>
     );
