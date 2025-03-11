@@ -5,6 +5,10 @@ import PS1Console from "../assets/ps1/PSX-Console-wController.webp";
 import PS1Marketing from "../assets/ps1/3980894-ps1-classic.webp"
 import ff7PS1Img from "../assets/ps1/final-fantasy-7-ps1-wide-1.webp";
 
+import PS2Console from "../assets/ps2/ps2-console.webp";
+import PS2Launch from "../assets/ps2/ps2launch.webp";
+import GTAIII from "../assets/ps2/GTA-3.webp"
+
 const consoles = [
     {
         id: "ps1",
@@ -30,19 +34,19 @@ const consoles = [
         id: "ps2",
         name: "PlayStation 2",
         year: "2000",
-        image: "",
+        image: PS2Console,
         events: [
             {
                 id: "ps2-event1",
-                title: "Best-Selling Console Ever",
-                description: "The PS2 becomes the best-selling console of all time.",
-                imag: "",
+                title: "PS2 Launches",
+                description: "The PS2 hits markets in Japan in March, later in North America in October",
+                imag: PS2Launch,
             },
             {
                 id: "ps2-event2",
                 title: "Grand Theft Auto III Released",
-                description: "GTA III revolutionizes opem-world gaming.",
-                image: "",
+                description: "GTA III revolutionizes open-world gaming.",
+                image: GTAIII,
             },
         ],
     },
