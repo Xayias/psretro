@@ -72,7 +72,7 @@ export default function PlayStationTimeline() {
                 {consoles.map((console) => (
                     <motion.div key={console.id} className="realtive mb-10 cursor-pointer" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
                         <div className="p-4 bg-gray-900 text-white rounded-lg shadow-lg relative inline-block" onClick={() => setActiveConsole(activeConsole === console.id ? null: console.id)}>
-                            <img src={console.image} alt={console.name} className="w-24 mx-auto" />
+                            <img src={console.image} alt={console.name} className="w-60 mx-auto" />
                             <h2 class="text-lg font-bold text-center mt-2">{console.name} ({console.year})</h2>
                         </div>
                         {activeConsole === console.id && (
@@ -80,7 +80,7 @@ export default function PlayStationTimeline() {
                                 <motion.div className="mt-4 border-l-4 border-blue-400 pl-6" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 50 }}>
                                     {console.events.map((event) => (
                                         <motion.div key={event.id} className="mt-4 bg-gray-800 p-4 text-white rounded-lg shadow-md" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 50}}>
-                                            <img src={event.image} alt={event.title} className="w-16 mx-auto mb-2" />
+                                            <img src={event.image} alt={event.title} className="w-52 mx-auto mb-2" />
                                             <h3 className="text-md font-semibold">{event.title}</h3>
                                             <p className="text-sm">{event.description}</p>
                                         </motion.div>
