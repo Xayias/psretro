@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import PS1Console from "../assets/ps1/PSX-Console-wController.webp";
+import PS1Marketing from "../assets/ps1/3980894-ps1-classic.webp"
 import ff7PS1Img from "../assets/ps1/final-fantasy-7-ps1-wide-1.webp";
 
 const consoles = [
@@ -8,13 +10,13 @@ const consoles = [
         id: "ps1",
         name: "PlayStation 1",
         year: "1994",
-        image: "",
+        image: PS1Console,
         events: [
             {
                 id: "ps1-event1",
                 title: "Launch of PlayStation 1",
                 description: "Sony enters the gaming market with the revolutionary PlayStation.",
-                image: "",
+                image: PS1Marketing,
             },
             {
                 id: "ps1-event2",
