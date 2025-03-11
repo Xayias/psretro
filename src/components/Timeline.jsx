@@ -52,8 +52,8 @@ export default function PlayStationTimeline() {
     const [activeConsole, setActiveConsole] = useState(null);
 
     return(
-        <div className="relative w-full max-w-4xl mx-auto p-6">
-            <div className="sticky top-20 left-0 w-64 bg-gray-800 p-4 rounded-lg text-white">
+        <div className="relative flex">
+            <div className="sticky top-20 w-64 mr-8 bg-gray-800 p-4 rounded-lg text-white self-start">
                 <h3 className="text-lg font-bold">Table of Contents</h3>
                 <ul>
                     {consoles.map((console) => (
@@ -64,7 +64,7 @@ export default function PlayStationTimeline() {
                 </ul>
             </div>
 
-            <div className="relative border-l-4 border-blue-500 pl-8">
+            <div className="flex-1 border-l-4 border-blue-500 pl-8">
                 {consoles.map((console) => (
                     <motion.div key={console.id} className="realtive mb-10 cursor-pointer" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
                         <div className="p-4 bg-gray-900 text-white rounded-lg shadow-lg relative inline-block" onClick={() => setActiveConsole(activeConsole === console.id ? null: console.id)}>
