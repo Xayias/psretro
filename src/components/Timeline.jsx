@@ -53,7 +53,7 @@ export default function PlayStationTimeline() {
 
     return(
         <div className="relative w-full max-w-4xl mx-auto p-6">
-            <div className="fixed top-1/4 left-4 bg-gray-800 p-4 rounded-lg text-white">
+            <div className="sticky top-1/4 left-4 bg-gray-800 p-4 rounded-lg text-white">
                 <h3 className="text-lg font-bold">Table of Contents</h3>
                 <ul>
                     {consoles.map((console) => (
