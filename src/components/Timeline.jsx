@@ -79,7 +79,7 @@ export default function PlayStationTimeline() {
                             </div>
                             {activeConsole === console.id && (
                                 <AnimatePresence>
-                                    <motion.div className="mt-4 p-6 bg-black/70 rounded-lg shadow-lg" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 50 }}>
+                                    <motion.div className="my-3 p-6 bg-black/70 rounded-lg shadow-lg" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 50 }}>
                                         {console.events.map((event) => (
                                             <motion.div key={event.id} className="mt-4 border-l-4 border-blue-500 p-4 text-white" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 50}}>
                                                 <img src={event.image} alt={event.title} className="w-52 mx-auto mb-2" />
