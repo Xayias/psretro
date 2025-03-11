@@ -59,7 +59,7 @@ export default function PlayStationTimeline() {
         <div className="relative w-full pt-6 bg-[url('/psretro/timelinebg30opat.webp')] bg-cover bg-center bg-fixed">
             <h2 className="text-3xl font-bold text-black">PlayStation History</h2>
             <div className="relative flex p-16">
-                <div className="sticky top-20 w-64 mr-8 bg-black/30 p-4 rounded-lg text-white self-start">
+                <div className="sticky top-20 w-64 mr-8 bg-black/70 p-4 rounded-lg text-white self-start">
                     <h3 className="text-lg font-bold">Table of Contents</h3>
                     <ul>
                         {consoles.map((console) => (
@@ -72,16 +72,16 @@ export default function PlayStationTimeline() {
 
                 <div className="flex-1 border-l-4 border-blue-500 pl-8">
                     {consoles.map((console) => (
-                        <motion.div key={console.id} className="realtive mb-10 cursor-pointer" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-                            <div className="p-4 bg-black/60 text-white rounded-lg shadow-lg relative inline-block" onClick={() => setActiveConsole(activeConsole === console.id ? null: console.id)}>
+                        <motion.div key={console.id} className="relative mb-10 cursor-pointer" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+                            <div className="p-4 text-black rounded-lg shadow-lg relative inline-block" onClick={() => setActiveConsole(activeConsole === console.id ? null: console.id)}>
                                 <img src={console.image} alt={console.name} className="w-60 mx-auto" />
                                 <h3 class="text-lg font-bold text-center mt-2">{console.name} ({console.year})</h3>
                             </div>
                             {activeConsole === console.id && (
                                 <AnimatePresence>
-                                    <motion.div className="mt-4 pl-6" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 50 }}>
+                                    <motion.div className="mt-4 pl-6 bg-black/50" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 50 }}>
                                         {console.events.map((event) => (
-                                            <motion.div key={event.id} className="mt-4 bg-black/70 p-4 text-white rounded-lg shadow-md" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 50}}>
+                                            <motion.div key={event.id} className="mt-4 border-l-4 border-blue-500 p-4 text-white rounded-lg shadow-md" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 50}}>
                                                 <img src={event.image} alt={event.title} className="w-52 mx-auto mb-2" />
                                                 <h3 className="text-md font-semibold">{event.title}</h3>
                                                 <p className="text-sm">{event.description}</p>
