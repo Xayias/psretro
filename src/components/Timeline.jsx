@@ -55,9 +55,10 @@ const consoles = [
 export default function PlayStationTimeline() {
     const [activeConsole, setActiveConsole] = useState(null);
 
+    <h2 className="text-lg font-bold">PlayStation History</h2>
+
     return(
         <div className="relative flex p-16">
-            <h2 className="text-lg font-bold">PlayStation History</h2>
             <div className="sticky top-20 w-64 mr-8 bg-gray-800 p-4 rounded-lg text-white self-start">
                 <h3 className="text-lg font-bold">Table of Contents</h3>
                 <ul>
