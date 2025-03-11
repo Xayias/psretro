@@ -57,6 +57,7 @@ export default function PlayStationTimeline() {
 
     return(
         <div className="relative flex p-16">
+            <h2 className="text-lg font-bold">PlayStation History</h2>
             <div className="sticky top-20 w-64 mr-8 bg-gray-800 p-4 rounded-lg text-white self-start">
                 <h3 className="text-lg font-bold">Table of Contents</h3>
                 <ul>
@@ -73,7 +74,7 @@ export default function PlayStationTimeline() {
                     <motion.div key={console.id} className="realtive mb-10 cursor-pointer" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
                         <div className="p-4 bg-gray-900 text-white rounded-lg shadow-lg relative inline-block" onClick={() => setActiveConsole(activeConsole === console.id ? null: console.id)}>
                             <img src={console.image} alt={console.name} className="w-60 mx-auto" />
-                            <h2 class="text-lg font-bold text-center mt-2">{console.name} ({console.year})</h2>
+                            <h3 class="text-lg font-bold text-center mt-2">{console.name} ({console.year})</h3>
                         </div>
                         {activeConsole === console.id && (
                             <AnimatePresence>
