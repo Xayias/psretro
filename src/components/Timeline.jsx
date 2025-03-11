@@ -40,7 +40,7 @@ const consoles = [
                 id: "ps2-event1",
                 title: "PS2 Launches",
                 description: "The PS2 hits markets in Japan in March, later in North America in October",
-                imag: PS2Launch,
+                image: PS2Launch,
             },
             {
                 id: "ps2-event2",
