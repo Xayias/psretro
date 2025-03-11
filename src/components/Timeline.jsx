@@ -18,7 +18,7 @@ const consoles = [
                 id: "ps1-event2",
                 title: "Final Fantasy VII Released",
                 description: "One of the most iconic RPGs of all time debuts on the PS1.",
-                image: "",
+                image: "../assets/ps1/final-fantasy-7-ps1-wide-1.webp",
             },
         ],
     },
