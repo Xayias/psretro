@@ -56,7 +56,7 @@ export default function PlayStationTimeline() {
     const [activeConsole, setActiveConsole] = useState(null);
 
     return(
-        <div className="relative w-full pt-6">
+        <div className="relative w-full pt-6 bg-[url('../assets/timeline.bg.webp')] bg-cover bg-center bg-fixed">
             <h2 className="text-3xl font-bold">PlayStation History</h2>
             <div className="relative flex p-16">
                 <div className="sticky top-20 w-64 mr-8 bg-gray-800 p-4 rounded-lg text-white self-start">
