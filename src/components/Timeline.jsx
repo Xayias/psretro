@@ -176,10 +176,10 @@ export default function PlayStationTimeline() {
     const [activeConsole, setActiveConsole] = useState(null);
 
     return(
-        <div className="relative w-full pt-6 bg-[url('/psretro/timelinebg30opat.webp')] bg-cover bg-center bg-fixed">
+        <div className="relative flex flex-col md:flex-row w-full pt-6 bg-[url('/psretro/timelinebg30opat.webp')] bg-cover bg-center bg-fixed">
             <h2 className="text-3xl font-bold text-black">PlayStation History</h2>
             <div className="relative flex p-16">
-                <div className="sticky top-20 w-64 mr-8 bg-black/70 p-4 rounded-lg text-white self-start">
+                <div className=" hidden md:block sticky top-20 w-64 mr-8 bg-black/70 p-4 rounded-lg text-white self-start">
                     <h3 className="text-lg font-bold">Table of Contents</h3>
                     <ul>
                         {consoles.map((console) => (
@@ -190,9 +190,9 @@ export default function PlayStationTimeline() {
                     </ul>
                 </div>
 
-                <div className="flex-1 border-l-4 border-blue-500 pl-8">
+                <div className="flex-1 w-full md:border-l-4 border-blue-500 pl-4 md: md:pl-8">
                     {consoles.map((console) => (
-                        <motion.div key={console.id} className="relative mb-10 cursor-pointer" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+                        <motion.div key={console.id} className="relative mb-10 cursor-pointer w-full" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
                             <div className="p-4 text-black relative inline-block" onClick={() => setActiveConsole(activeConsole === console.id ? null: console.id)}>
                                 <img src={console.image} alt={console.name} className="w-60 mx-auto" />
                                 <h3 class="text-lg font-bold text-center mt-2">{console.name} ({console.year})</h3>
