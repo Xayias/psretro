@@ -9,6 +9,28 @@ import PS2Console from "../assets/ps2/ps2-console.webp";
 import PS2Launch from "../assets/ps2/ps2launch.webp";
 import GTAIII from "../assets/ps2/GTA-3.webp"
 
+import PSPConsole from "../assets/psp/PSP-1000.webp";
+import PSPLaunch from "../assets/psp/psp-launch.webp";
+
+import PS3Console from "../assets/ps3/Ps3-fat-console.webp";
+import PS3Launch from "../assets/ps3/DannyZarka1stbuyerPLAYSTATION3MyerMidnightLaunch2.webp";
+
+import PSVitaConsole from "../assets/psvita/PlayStation-Vita-1101-FL.webp";
+import PSVitaLaunch from "../assets/psvita/PSVitaLaunch.webp";
+
+import PS4Console from "../assets/ps4/PS4-Console-wDS4.webp";
+import PS4Launch from "../assets/ps4/download.webp";
+
+import PSVRConsole from "../assets/psvr/psvr-product-thumbnail-01-en-14sep21.webp";
+import PSVRLaunch from "../assets/psvr/psvr-image2.webp";
+
+import PS5Console from "../assets/ps5/Playstation5Console.webp";
+import PS5Launch from "../assets/ps5/1229598487.webp";
+
+import PSVR2Console from "../assets/psvr2/PSVR2-thumbnail-01-en-22feb22.webp";
+import PSVR2Launch from "../assets/psvr2/psvr-2-hands-on-5.webp";
+
+
 const consoles = [
     {
         id: "ps1",
@@ -39,7 +61,7 @@ const consoles = [
             {
                 id: "ps2-event1",
                 title: "PS2 Launches",
-                description: "The PS2 hits markets in Japan in March, later in North America in October",
+                description: "The PlayStation 2 hits markets in Japan in March, later in North America in October",
                 image: PS2Launch,
             },
             {
@@ -50,6 +72,104 @@ const consoles = [
             },
         ],
     },
+    {
+        id: "psp",
+        name: "PlayStation Portable",
+        year: "2005",
+        image: PSPConsole,
+        events: [
+            {
+                id: "psp-event1",
+                title: "PlayStation Portable Launches",
+                description: "The PSP hits markets",
+                image: PSPLaunch,
+            }
+        ]
+    },
+    {
+        id: "ps3",
+        name: "PlayStation 3",
+        year: "2006",
+        image: PS3Console,
+        events: [
+            {
+                id: "ps3-event1",
+                title: "PlayStation 3 Launches",
+                description: "The PS3 hits markets",
+                image: PS3Launch,
+            }
+        ]
+    },
+    {
+        id: "psvita",
+        name: "PlayStation Vita",
+        year: "2012",
+        image: PSVitaConsole,
+        events: [
+            {
+                id: "psvita-event1",
+                title: "PlayStation Vita Launches",
+                description: "The PS Vita hits markets",
+                image: PSVitaLaunch,
+            }
+        ]
+    },
+    {
+        id: "ps4",
+        name: "PlayStation 4",
+        year: "2013",
+        image: PS4Console,
+        events: [
+            {
+                id: "ps4-event1",
+                title: "PlayStation 4 Launches",
+                description: "The PS4 hits markets",
+                image: PS4Launch,
+            }
+        ]
+    },
+    {
+        id: "psvr",
+        name: "PlayStation VR",
+        year: "2016",
+        image: PSVRConsole,
+        events: [
+            {
+                id: "pspvr-event1",
+                title: "PlayStation VR Launches",
+                description: "The PS VR hits markets",
+                image: PSVRLaunch,
+            }
+        ]
+    },
+    {
+        id: "ps5",
+        name: "PlayStation 5",
+        year: "2020",
+        image: PS5Console,
+        events: [
+            {
+                id: "ps5-event1",
+                title: "PlayStation 5 Launches",
+                description: "The PS5 hits markets",
+                image: PS5Launch,
+            }
+        ]
+    },
+    {
+        id: "psvr2",
+        name: "PlayStation VR 2",
+        year: "2023",
+        image: PSVR2Console,
+        events: [
+            {
+                id: "psvr2-event1",
+                title: "PlayStation VR 2 Launches",
+                description: "The PS VR 2 hits markets",
+                image: PSVR2Launch,
+            }
+        ]
+    }
 ];
 
 export default function PlayStationTimeline() {
