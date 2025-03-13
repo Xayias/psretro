@@ -12,7 +12,7 @@ import GTAIII from "../assets/ps2/GTA-3.webp"
 import PSPConsole from "../assets/psp/PSP-1000.webp";
 import PSPLaunch from "../assets/psp/psp-launch.webp";
 
-import PS3Console from "../assets/ps3/Ps3-fat-console.webp";
+import PS3Console from "../assets/ps3/ps3hori.webp";
 import PS3Launch from "../assets/ps3/DannyZarka1stbuyerPLAYSTATION3MyerMidnightLaunch2.webp";
 
 import PSVitaConsole from "../assets/psvita/PlayStation-Vita-1101-FL.webp";
