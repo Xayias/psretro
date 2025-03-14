@@ -178,7 +178,7 @@ export default function PlayStationTimeline() {
     return(
         <div className="relative flex flex-col md:block w-full pt-6 bg-[url('/psretro/timelinebg30opat.webp')] bg-cover bg-center bg-fixed">
             <h2 className="text-3xl font-bold text-black">PlayStation History</h2>
-            <div className="relative flex p-16">
+            <div className="relative flex p-16 w-full 2xl:w-9/12">
                 <div className=" hidden md:block sticky top-20 w-64 mr-8 bg-black/70 p-4 rounded-lg text-white self-start">
                     <h3 className="text-lg font-bold">Table of Contents</h3>
                     <ul>
